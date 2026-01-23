@@ -65,11 +65,7 @@ header a:hover {
   width: 150px;
 }
 
-.hero-section {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-} 
+
 
 .hero-content {
 
