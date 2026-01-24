@@ -64,23 +64,23 @@ const HomePage = () => {
         <div className="info-box">
           <h3 className="info-title">📘 Browse common exams</h3>
           <ol className="info-list">
-            <li>
+            <li data-step="1">
               <strong>Search for a scan</strong><br />
               Enter your scan type and location to see prices for uninsured patients.
             </li>
-            <li>
+            <li data-step="2">
               <strong>Compare facilities</strong><br />
               See cash prices from different imaging centers near you.
             </li>
           </ol>
         </div>
 
-        <div className="info-box">
+        <div className="info-box right">
           <h3 className="info-title">How It Works</h3>
           <ol className="info-list">
-            <li><strong>Search for a scan</strong> – Enter your scan type and location to see prices.</li>
-            <li><strong>Compare facilities</strong> – See cash prices from nearby centers.</li>
-            <li><strong>Save on medical bills</strong> – Choose the best option, no insurance needed.</li>
+            <li data-step="1"><strong>Search for a scan</strong> – Enter your scan type and location to see prices.</li>
+            <li data-step="2"><strong>Compare facilities</strong> – See cash prices from nearby centers.</li>
+            <li data-step="3"><strong>Save on medical bills</strong> – Choose the best option, no insurance needed.</li>
           </ol>
         </div>
       </div>
