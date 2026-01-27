@@ -37,7 +37,24 @@ const SearchPage = () => {
             </div>
             <hr />
 
-             <Map />
+            <div className="results-container">
+                <section className="facility-results-section">
+                    <div >
+                        <p className="results-heading">Results for {/* Render location name here */}</p>
+                    </div>
+                    <div >
+                        <section className="facility-result-card-container">
+                            {/* Facility card components would be rendered here */}
+                        </section>
+                    </div>
+                </section>
+                <section className="map-panel">
+                    <div className="map-header">Map View</div>
+                    <div className="map-placeholder">
+                        <Map />
+                    </div>
+                </section>
+            </div>
 
 
         </>

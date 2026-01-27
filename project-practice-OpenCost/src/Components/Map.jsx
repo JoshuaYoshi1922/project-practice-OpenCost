@@ -10,7 +10,10 @@ const center = {
   lng: -94.5786,
 };
 
-export default function Map() {
+export default function Map(props) {
+
+
+    
   return (
     <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
       <GoogleMap
