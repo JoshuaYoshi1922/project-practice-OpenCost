@@ -1,3 +1,6 @@
+import NavBar from './NavBar.jsx';
+import SearchBar from './SearchBar.jsx';
+
 const HomePage = () => {
 
 
@@ -5,18 +8,7 @@ const HomePage = () => {
 
     <div className="home-wrapper">
 
-      <header className="home-header">
-        <h1 className="header-title">FindAffordableScan</h1>
-        <nav>
-
-          <select className="header-select">
-            <option value="how-it-works">How It Works</option>
-            <option value="about">About Us</option>
-            <option value="contact">Contact</option>
-          </select>
-
-        </nav>
-      </header>
+      <NavBar />
 
       <section className="hero-section">
         <div className="hero-image-wrapper">
@@ -33,18 +25,8 @@ const HomePage = () => {
             Easily compare cash prices for X-rays, CT scans, MRIs, and ultrasounds at facilities near you.
           </p>
 
-          <div className="search-container">
-            <div className="search-box">
-              <input
-                type="text"
-                className="search-input"
-                placeholder='Search for a scan or symptom (e.g., “CT Abdomen”)'
-              />
-              <button className="search-button">
-                Search
-              </button>
-            </div>
-          </div>
+          <SearchBar />
+
         </div>
       </section>
 
