@@ -2,11 +2,11 @@ import NavBar from './NavBar.jsx';
 import SearchBar from './SearchBar.jsx';
 import Map from './Map.jsx';
 
-const SearchPage = () => {
+const SearchPage = ({ onToggleDarkMode, isDarkMode }) => {
 
     return (
         <>
-            <NavBar />
+            <NavBar onToggleDarkMode={onToggleDarkMode} isDarkMode={isDarkMode} />
             <div>
                 <br />
 

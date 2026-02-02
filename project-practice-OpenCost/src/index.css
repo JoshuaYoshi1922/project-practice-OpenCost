@@ -5,6 +5,11 @@ body {
   color: #1f2d3d;
 }
 
+body.dark {
+  background-color: #181f30;
+  color: #e2e8f0;
+}
+
 a {
   font-weight: 500;
   color: #000000;
@@ -47,6 +52,27 @@ header a {
 
 header a:hover {
   text-decoration: none;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.dark-mode-toggle {
+  border: 1px solid #dbe4f0;
+  background: #ffffff;
+  color: #1f2d3d;
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background: #f5f7fb;
 }
 
 .hero-image {
@@ -426,6 +452,92 @@ select:focus {
   flex: 1;
   min-height: 420px;
   background-color: #e5eef5;
+}
+
+/* Dark mode overrides */
+body.dark a {
+  color: #93c5fd;
+}
+
+body.dark a:hover {
+  color: #bfdbfe;
+}
+
+body.dark header {
+  background-color: #0b1220;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+body.dark header h1 {
+  color: #e2e8f0;
+}
+
+body.dark .hero,
+body.dark .search-box,
+body.dark .scan-buttons,
+body.dark .info-box,
+body.dark .search-bar-wrapper,
+body.dark .map-panel,
+body.dark .map-header {
+  background-color: #111827;
+  color: #e2e8f0;
+}
+
+body.dark .search-input,
+body.dark .header-select,
+body.dark .dropdown-trigger,
+body.dark .filter-button {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  border-color: #1f2937;
+}
+
+body.dark .search-input::placeholder {
+  color: #94a3b8;
+}
+
+body.dark .scan-button {
+  color: #e2e8f0;
+}
+
+body.dark .scan-button span {
+  background: #1e293b;
+}
+
+body.dark .scan-button:hover {
+  background: #0b1220;
+}
+
+body.dark .results-container {
+  background-color: #0b1220;
+}
+
+body.dark .results-heading,
+body.dark .info-title,
+body.dark .info-list strong {
+  color: #e2e8f0;
+}
+
+body.dark .info-list {
+  color: #cbd5f5;
+}
+
+body.dark .info-box.right .info-list li:not(:last-child)::after {
+  border-left-color: #1f2937;
+}
+
+body.dark .map-placeholder {
+  background-color: #0f172a;
+}
+
+body.dark .dark-mode-toggle {
+  background: #111827;
+  color: #e2e8f0;
+  border-color: #1f2937;
+}
+
+body.dark .dark-mode-toggle:hover {
+  background: #0f172a;
 }
 
 

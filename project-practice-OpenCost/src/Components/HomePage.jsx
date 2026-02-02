@@ -1,14 +1,14 @@
 import NavBar from './NavBar.jsx';
 import SearchBar from './SearchBar.jsx';
 
-const HomePage = () => {
+const HomePage = ({ onToggleDarkMode, isDarkMode }) => {
 
 
   return (
 
     <div className="home-wrapper">
 
-      <NavBar />
+      <NavBar onToggleDarkMode={onToggleDarkMode} isDarkMode={isDarkMode} />
 
       <section className="hero-section">
         <div className="hero-image-wrapper">
